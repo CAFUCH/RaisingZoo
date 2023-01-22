@@ -42,9 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Prop
+    uniqueID: 3742335421
+    locked: 0
+  - name: Clicker
+    uniqueID: 1842005181
+    locked: 0
   - name: AnimalGround
     uniqueID: 2791644755
     locked: 0
-  - name: Prop
-    uniqueID: 3742335421
+  - name: Animal
+    uniqueID: 592788065
     locked: 0

@@ -24,9 +24,7 @@ public class Move : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other) {
-
-        Debug.Log("충돌중");
+    private void OnTriggerEnter2D(Collider2D other) {
         
         if (other.CompareTag("G")) dd();
     }

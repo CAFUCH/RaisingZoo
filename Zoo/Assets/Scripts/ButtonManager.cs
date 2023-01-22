@@ -7,21 +7,31 @@ using DG.Tweening;
 
 public class ButtonManager : MonoBehaviour
 {
-    [SerializeField] private GameObject pan;
-    [SerializeField] private Button moveB;
+    [SerializeField] private GameObject gamePanel;
+    // [SerializeField] private Button gamePanelB;
     [SerializeField] private int upDir, downDir;
 
-    [SerializeField] private List<Sprite> moveBSprites = new List<Sprite>();
-    private bool panel = false;
-    public void PanelMove() {
+    // [SerializeField] private List<Sprite> gameMoveBSprites = new List<Sprite>();
+    private bool isGamePanel = false;
 
-        panel = !panel;
+    [SerializeField] private GameObject areaPanel;
 
-        if (!panel) {
+    public void GamePanelMove() { //게임 속성 판넬을 열고 닫는 메서드
 
-            pan.transform.DOMoveY(upDir, 0.75f);
+        if (!isGamePanel) {
+
+            gamePanel.transform.DOMoveY(upDir, 0.75f);
             // .onComplete(() => moveB.gameObject.SetActive(false));
+            //버튼 이미지 바꾸는 거 해결하기
         }
-        else { pan.transform.DOMoveY(downDir, 0.75f); }
+        else { gamePanel.transform.DOMoveY(downDir, 0.75f); }
+
+        isGamePanel = !isGamePanel;
+    }
+
+    public void AreaPanelTrue() {
+        
+        Debug.Log("area 버튼 눌림");
+        areaPanel.SetActive(true);
     }
 }
