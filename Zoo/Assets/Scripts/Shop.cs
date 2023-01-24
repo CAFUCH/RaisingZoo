@@ -8,12 +8,27 @@ public class Shop : MonoBehaviour
     Clicker clicker;
 
     private GameObject curButton;
+
+    [SerializeField] private List<GameObject> animalPanels = new List<GameObject>();
+
+    [SerializeField] private List<AnimalAttributeSO> animalSos = new List<AnimalAttributeSO>();
+
     [SerializeField] private List<GameObject> animalList = new List<GameObject>(); //동물이 담긴다
+
     [SerializeField] private List<int> animalPriceList = new List<int>(); //동물 가격이 담긴다
+
 
     private void Awake() {
 
         clicker = GetComponent<Clicker>();
+    }
+
+    public void AnimalShopSetting() {
+
+        for (int i = 0; i < animalSos.Count; i++) {
+
+            // animalPanels[i].transform.GetChild(0).GetComponent<Sprite>() = tlqkf;
+        }
     }
 
     public void AnimalShop() { //동물 구매
