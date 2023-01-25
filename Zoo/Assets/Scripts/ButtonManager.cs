@@ -32,6 +32,7 @@ public class ButtonManager : MonoBehaviour
     public void AreaPanelTrue() {
         
         Debug.Log("area 버튼 눌림");
+        
         areaPanel.SetActive(true);
     }
 }

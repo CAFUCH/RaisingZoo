@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
     Clicker clicker;
 
-    [SerializeField] private TextMeshProUGUI goldTxt;
+    public TextMeshProUGUI goldTxt;
 
     private void Awake() {
         

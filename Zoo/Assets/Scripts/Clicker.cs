@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class Clicker : MonoBehaviour
 {
-
     [SerializeField] private int gold; //현재 골드
+    
     public int curGold {
 
         get { return gold; }

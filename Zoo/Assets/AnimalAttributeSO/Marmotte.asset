@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43c35bbd2389e874a9527ad5f011fa8c, type: 3}
-  m_Name: Nullheadbird
+  m_Name: Marmotte
   m_EditorClassIdentifier: 
   areaName: Afreeca
-  animalName: nullheadbird
-  gImage: {fileID: 21300000, guid: d5f692425a2eeba44a38e87211c8259f, type: 3}
+  animalName: Marmotte
+  gImage: {fileID: 21300000, guid: dd61fd78047ccb54baa9c466133b0e26, type: 3}
   priceGValue: 0
-  animal1: {fileID: 21300000, guid: 8976bf96c651f9c4db3f80102dc41861, type: 3}
+  animal1: {fileID: 21300000, guid: c762573fca87bee4ea4aedca94d38faf, type: 3}
   priceA1Value: 0
   animal2: {fileID: 21300000, guid: b1860e74d1731b8469068a3b78472c62, type: 3}
   priceA2Value: 0

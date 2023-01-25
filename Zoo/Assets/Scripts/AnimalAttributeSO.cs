@@ -16,4 +16,5 @@ public class AnimalAttributeSO : ScriptableObject
     public int priceA2Value; //동물 2 가격
     public Sprite animal3; //동물 3 사진
     public int priceA3Value; //동물 3 가격
+    public int animalL = 0;
 }
