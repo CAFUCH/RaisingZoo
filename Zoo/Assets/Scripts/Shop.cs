@@ -49,7 +49,7 @@ public class Shop : MonoBehaviour
 
         curButton = EventSystem.current.currentSelectedGameObject; //누른 버튼의 이름을 받아온다
         
-        for (int i = 0; i < animalSos.Count; i++) { //동물 수 만큼 반복
+        for (int i = 0; i < animalPanels.Count; i++) { //동물 수 만큼 반복
 
             if (curButton.name == animalSos[i].name) { //사려는 동물과 같은 SO를 찾았다면
 
@@ -57,17 +57,20 @@ public class Shop : MonoBehaviour
 
                     animalList[i].transform.GetChild(0).gameObject.SetActive(true); //해당 동물을 켜준다
                     animalSos[i].animalL++; //레벨을 1 올려준다 = 1
+                    clicker.curGold -= animalSos[i].priceA1Value;
                 }
                 
                 else if (animalSos[i].animalL == 1 && clicker.curGold >= animalSos[i].priceA2Value) { //사려는 동물이 암컷이라면
 
                     animalList[i].transform.GetChild(1).gameObject.SetActive(true); //해당 동물을 켜준다
                     animalSos[i].animalL++; //레벨을 1 올려준다 = 2
+                    clicker.curGold -= animalSos[i].priceA2Value;
                 }
 
                 else if (animalSos[i].animalL == 2 && clicker.curGold >= animalSos[i].priceA3Value) { //사려는 동물이 아기라면
 
                     animalList[i].transform.GetChild(3).gameObject.SetActive(true); //해당 동물을 켜준다
+                    clicker.curGold -= animalSos[i].priceA3Value;
                 } 
             }
         }
@@ -77,6 +80,18 @@ public class Shop : MonoBehaviour
 
     public void AreaBuy() { //구역 구매
 
-        
+        curButton = EventSystem.current.currentSelectedGameObject; //누른 버튼의 이름을 받아온다
+
+        for (int i = 0; i < areaPanels.Count; i++) { //구역 판넬 수 만큼 반복
+
+            if (curButton.name == animalSos[i].name) {
+
+                if (clicker.curGold >= animalSos[i].priceGValue) {
+
+                    animalList[i].gameObject.SetActive(true); //해당 구역을 켜준다
+                    clicker.curGold -= animalSos[i].priceGValue;
+                }
+            }
+        }
     }
 }
