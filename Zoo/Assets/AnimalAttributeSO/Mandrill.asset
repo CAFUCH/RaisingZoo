@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mandrill
   m_EditorClassIdentifier: 
   areaName: Afreeca
-  animalName: Mandrill
+  animalName: "\uB9E8\uB4DC\uB9B4"
   gImage: {fileID: 21300000, guid: c42779fc67f223745acc81e5ccc69d3b, type: 3}
   priceGValue: 0
   animal1: {fileID: 21300000, guid: 61c4ab13b08092342a97f10e8e301573, type: 3}
@@ -22,3 +22,4 @@ MonoBehaviour:
   priceA2Value: 0
   animal3: {fileID: 21300000, guid: 398d5f1a9dbcd9a4e80d760911ff93bc, type: 3}
   priceA3Value: 0
+  animalL: 0

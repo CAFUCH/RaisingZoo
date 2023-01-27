@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c35bbd2389e874a9527ad5f011fa8c, type: 3}
+  m_Name: Cat
+  m_EditorClassIdentifier: 
+  areaName: Afreeca
+  animalName: "\uACE0\uC591\uC774"
+  gImage: {fileID: 21300000, guid: d5f692425a2eeba44a38e87211c8259f, type: 3}
+  priceGValue: 0
+  animal1: {fileID: 21300000, guid: 8976bf96c651f9c4db3f80102dc41861, type: 3}
+  priceA1Value: 0
+  animal2: {fileID: 21300000, guid: b1860e74d1731b8469068a3b78472c62, type: 3}
+  priceA2Value: 0
+  animal3: {fileID: 21300000, guid: 000abae4a1193d142b2310ad9b8e7577, type: 3}
+  priceA3Value: 0
+  animalL: 0
