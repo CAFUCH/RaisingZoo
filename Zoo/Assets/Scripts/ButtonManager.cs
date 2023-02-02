@@ -8,13 +8,13 @@ using DG.Tweening;
 public class ButtonManager : MonoBehaviour
 {
     [SerializeField] private GameObject gamePanel;
-    // [SerializeField] private Button gamePanelB;
+    
     [SerializeField] private int upDir, downDir;
 
     [SerializeField] private GameObject settingPanel;
 
-    // [SerializeField] private List<Sprite> gameMoveBSprites = new List<Sprite>();
     private bool isPanel = false;
+
     private bool isGamePanel = false;
 
     private bool isSettingPanel = false;
